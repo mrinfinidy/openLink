@@ -5,10 +5,13 @@ chrome.runtime.onMessage.addListener(
 );
 
 function openLinks() {
-    var links = document.getElementById('navigation').getElementsByTagName('a');
-    console.log(links.length);
+    var links = document.getElementById('gallery').getElementsByTagName('a');
     for (var i = 0; i < links.length; i++) {
-        console.log(links[i]);
-        window.open(links[i], "_blank");
+        window.open(links[i].href, "_blank");
     }
 }
+
+/*
+var image = "SomeURL".getElementsByTagName('img');
+window.open(image.src, "_blank");
+*/
