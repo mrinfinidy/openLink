@@ -1,3 +1,4 @@
+//open links after message that button was clicked
 chrome.runtime.onMessage.addListener(
     function(message) {
         openLinks();
